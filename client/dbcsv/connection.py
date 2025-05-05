@@ -1,7 +1,7 @@
 from typing import Optional, List, Any
-from dbapi2.utils import validate_dsn_url, login, query, validate_token
-from dbapi2.exception import (
-    InternalError, NotSupportedError, OperationalError, ProgrammingError,
+from dbcsv.utils import validate_dsn_url, login, query, validate_token
+from dbcsv.exception import (
+    NotSupportedError,  ProgrammingError,
     InterfaceError, AuthenticationError
 )
 

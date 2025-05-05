@@ -1,9 +1,9 @@
-import dbapi2
+import dbcsv
 import time
 
 
 def test_connection():
-    conn = dbapi2.connect(
+    conn = dbcsv.connect(
         dsn="http://localhost:80/testing", user="johndoe", password="secret"
     )
 

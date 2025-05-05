@@ -1,7 +1,7 @@
 version: '3.8'
  
 services:
-  web:
+  dbcsv-server:
     env_file:
       - .env
     build: ./dbcsv # Changed build context
@@ -10,3 +10,9 @@ services:
       - .:/app # Updated volume mount
     ports:
       - 80:80
+
+  dbcsv-client:
+    image: dbcsv-client
+    build:
+      context: ./client
+      dockerfile: Dockerfile
